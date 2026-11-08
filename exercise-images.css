@@ -1,0 +1,15 @@
+.exercise-links{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.exercise-link{min-height:44px;padding:9px 12px;border:1px solid var(--border);border-radius:9px;background:var(--panel2);color:var(--accent);font-size:.8rem;text-align:left}
+.exercise-link:hover{border-color:var(--accent)}
+.exercise-modal-open{overflow:hidden}
+#exerciseDialog{width:min(760px,calc(100% - 24px));max-height:calc(100dvh - 32px);overflow:auto;padding:20px;background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:18px}
+#exerciseDialog::backdrop{background:rgba(0,0,0,.78)}
+.exercise-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.exercise-heading h2{margin:0}
+.exercise-heading button{min-height:44px;flex-shrink:0}
+.exercise-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.exercise-photos figure{margin:0;min-width:0}
+.exercise-photos img{display:block;width:100%;height:auto;border-radius:10px;background:white}
+.exercise-photos figcaption{font-size:.78rem;color:var(--sub);margin-top:8px}
+#exerciseDialog a{color:var(--accent)}
+@media(max-width:460px){#exerciseDialog{padding:16px}.exercise-photos{grid-template-columns:1fr}}
